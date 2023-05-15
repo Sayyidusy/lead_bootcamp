@@ -9,6 +9,7 @@
 
     <dimen name="height_56dp">56dp</dimen>
 
+    <dimen name="width_172dp">172dp</dimen>
     <dimen name="width_130dp">130dp</dimen>
     <dimen name="width_72dp">72dp</dimen>
 
@@ -31,6 +32,6 @@
     <dimen name="padding_19dp">19dp</dimen>
     <dimen name="padding_16dp">16dp</dimen>
 
-    <dimen name="rounded_8dp">8dp</dimen>
-    <dimen name="rounded_16dp">16dp</dimen>
+    <dimen name="corner_16dp">16dp</dimen>
+    <dimen name="corner_8dp">8dp</dimen>
 </resources>
