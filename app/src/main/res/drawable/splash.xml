@@ -82,7 +82,7 @@
   <path
       android:pathData="M-34,-31h182.98v182h-182.98z"
       android:strokeAlpha="0.1"
-      android:fillColor="url(#pattern0)"
+
       android:fillAlpha="0.1"/>
   <path
       android:pathData="M58.01,126.58C94.68,126.58 124.4,97.01 124.4,60.54C124.4,24.06 94.68,-5.5 58.01,-5.5C21.34,-5.5 -8.38,24.06 -8.38,60.54C-8.38,97.01 21.34,126.58 58.01,126.58Z"
@@ -92,7 +92,6 @@
   <path
       android:pathData="M-9.49,-6.63h135.6v134.88h-135.6z"
       android:strokeAlpha="0.1"
-      android:fillColor="url(#pattern1)"
       android:fillAlpha="0.1"/>
   <path
       android:pathData="M58.01,102.54C81.33,102.54 100.24,83.74 100.24,60.54C100.24,37.34 81.33,18.53 58.01,18.53C34.69,18.53 15.78,37.34 15.78,60.54C15.78,83.74 34.69,102.54 58.01,102.54Z"
@@ -100,8 +99,7 @@
       android:fillColor="#FEFEFE"
       android:fillAlpha="0.1"/>
   <path
-      android:pathData="M14.26,18h87.47v86h-87.47z"
-      android:fillColor="url(#pattern2)"/>
+      android:pathData="M14.26,18h87.47v86h-87.47z" />
   <path
       android:pathData="M57.99,78C67.71,78 75.58,70.17 75.58,60.5C75.58,50.83 67.71,43 57.99,43C48.27,43 40.4,50.83 40.4,60.5C40.4,70.17 48.27,78 57.99,78Z"
       android:fillColor="#FEFEFE"/>
