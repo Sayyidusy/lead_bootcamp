@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.register.RegisterFragment">
+
+
+    <TextView
+        android:id="@+id/tv_title_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/title_login"
+        android:textAppearance="@style/TextAppearance.Wakey.BodyLarge.Bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/description_signup"
+        android:textAppearance="@style/TextAppearance.Wakey.BodyMedium.Regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="@dimen/size_340dp"
+        android:layout_height="@dimen/height_56dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_input_gray"
+        android:ems="10"
+        android:hint="@string/hint_input_email"
+        android:inputType="textPersonName"
+        android:padding="@dimen/margin_16dp"
+        android:textAppearance="@style/TextAppearance.Wakey.LabelMedium.Regular"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_register" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="@dimen/size_340dp"
+        android:layout_height="@dimen/height_56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input_gray"
+        android:ems="10"
+        android:hint="@string/hint_input_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/margin_16dp"
+        android:textAppearance="@style/TextAppearance.Wakey.LabelMedium.Regular"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        android:drawableEnd="@drawable/baseline_visibility_off_24"/>
+
+
+    <TextView
+        android:id="@+id/tv_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_terms_condition"
+        android:textAppearance="@style/TextAppearance.Wakey.LabelMedium.Regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signup"
+        android:layout_width="@dimen/size_340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_gradient"
+        android:text="@string/label_signup"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.Wakey.LabelMedium.Bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_terms" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/size_340dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="453dp">
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#707070" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:text="@string/label_or"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#707070" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/label_signup_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/label_signup_to_login"
+        android:textAppearance="@style/TextAppearance.Wakey.BodyMedium.Regular"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/width_72dp"
+            android:layout_height="@dimen/height_56dp"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:background="@drawable/bg_button_social"
+            android:gravity="center_vertical|start"
+            android:src="@drawable/ic_facebook"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/width_72dp"
+            android:layout_height="@dimen/height_56dp"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:background="@drawable/bg_button_social"
+            android:gravity="center_vertical|start"
+            android:src="@drawable/ic_apple"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/width_72dp"
+            android:layout_height="@dimen/height_56dp"
+            android:background="@drawable/bg_button_social"
+            android:gravity="center_vertical|start"
+            android:src="@drawable/ic_google"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
